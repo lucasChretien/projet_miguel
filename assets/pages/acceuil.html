@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index.css">
+    <title>Acceuil</title>
+</head>
+<body>
+    <div class="pages_global">
+        <nav class="navbar">
+            <p>titre</p>
+            <li><button>Acceuil</button></li>
+            <a href="../pages/setting.html">
+                <li><button>Gestion du compte</button></li>
+            </a>
+            <a href="../../index.html">
+                <li><button>Déconnexion</button></li>
+            </a>
+        </nav>
+        <div class="todo_list">
+            <p> Liste utilisateur</p>
+            <div class="categorie">
+                <ul>
+                    <li class="titre_collone">Nom</li>
+                    <li class="titre_collone">Prénom</li>
+                    <li class="titre_collone">Age</li>
+                    <li class="titre_collone">Prescripteur</li>
+                </ul>
+            </div>
+            <div class="container_list">
+                <ul id="information_user">
+                    <li></li>
+                </ul>
+            </div>
+            <div class="valider">
+                <input type="text" id="nom" placeholder="Nom">
+                <input type="text" id="prenom" placeholder="Prénom">
+                <input type="text" id="Age" placeholder="Age">
+                <input type="text" id="Prescripteur" placeholder="Prescripteur">
+                <button class="btn">Entrer</button>
+            </div>
+        </div>
+    </div>
+    <script src="../js/todolist.js"></script>
+</body>
+</html>
