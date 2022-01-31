@@ -3,10 +3,10 @@ const informationUser = document.querySelector("#information_user")
 
 const getUser = () => {
     return {
-        nom : document.getElementById("nom").value,
-        prenom : document.getElementById("prenom").value,
-        age : document.getElementById("Age").value,
-        prescripteur : document.getElementById("Prescripteur").value,
+        nom : document.getElementById("nom"),
+        prenom : document.getElementById("prenom"),
+        age : document.getElementById("Age"),
+        prescripteur : document.getElementById("Prescripteur"), 
     }
 }
 
@@ -16,11 +16,12 @@ btn.addEventListener("click", function(){
     for (const property in user) {
         if (user[property] != ""){
             const li = document.createElement("li")
-        li.innerHTML = user[property]
+        li.innerHTML = user[property].value
         informationUser.appendChild(li)}
+        user[property].value = "";
         
       }
-      
 })
+
 
 
