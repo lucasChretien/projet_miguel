@@ -1,4 +1,5 @@
-const btn = document.querySelector(".btn")
+/* start js first todolist */
+const button = document.querySelector(".btn")
 const informationUser = document.querySelector("#information_user")
 
 /* cette fonction permet de rassembler toute les valeurs obtenus dans une seule varriable */
@@ -11,18 +12,16 @@ const getUser = () => {
         prescripteur : document.getElementById("Prescripteur"), 
     }
 }
-
-btn.addEventListener("click", function(){
+button.addEventListener("click", function(){
     const user = getUser() /* donc la user contient getUser(donc toute nos valeurs récupérer au dessus)*/
-
+    let TR = document.createElement("tr")
     for (const property in user) {
-        if (user[property] != ""){
-            const li = document.createElement("li") /* cet ligne permet de cree de li apres un  clik */
-        li.innerHTML = user[property].value
-        informationUser.appendChild(li)}
-        user[property].value = "";  /* cet ligne permet de rénitialiser l'input après avoir cliquer sur le bouton*/
+        let TH = document.createElement("td")
+        let TXT = document.createTextNode(user[property].value)
+        TH.appendChild(TXT)
+        TR.appendChild(TH)
+        document.getElementById("tableUser").appendChild(TR)
+        user[property].value = "";
       }
+      
 })
-
-
-

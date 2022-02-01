@@ -1,53 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/index.css">
-    <title>Acceuil</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../css/acceuil.css">
+<title>Acceuil</title>
 </head>
 <body>
     <div class="pages_global">
         <nav class="navbar">
-            <p>titre</p>
-    <!-- button navbar -->
-            <li><button>Acceuil</button></li>
-            <a href="../pages/setting.html">
-                <li><button>Gestion du compte</button></li>
-            </a>
-            <a href="../../index.html">
-                <li><button>Déconnexion</button></li>
-            </a>
+            <!-- <p>titre</p> -->
+                <li class="items"><button>Accueil</button></li>
+                    <a href="../pages/setting.html">
+                <li class="items"><button>Gestion du compte</button></li>
+                    </a>
+                    <a href="../../index.html">
+                <li class="items"><button>Déconnexion</button></li>
+                    </a>
         </nav>
-    <!-- table collum name -->
         <div class="todo_list">
-            <p> Liste utilisateur</p>
-            <div class="categorie">
-                <ul>
-                    <li class="titre_collone">Nom</li>
-                    <li class="titre_collone">Prénom</li>
-                    <li class="titre_collone">Age</li>
-                    <li class="titre_collone">date de naissance</li>
-                    <li class="titre_collone">Prescripteur</li>
-                </ul>
-            </div>
-    <!-- getuser post up in board -->
-            <div class="container_list">
-                <ul id="information_user">
-                    <li class="contenu_get"></li>
-                </ul>
-            </div>
+                <p> Liste utilisateur</p>
             <div class="valider">
                 <input type="text" class="input_css" id="nom" placeholder="Nom">
                 <input type="text" class="input_css" id="prenom" placeholder="Prénom">
-                <input type="number" class="input_css" id="Age" placeholder="Age">
-                <input type="date" class="input_css" id="born" placeholder="date de naissance">
                 <input type="text" class="input_css" id="Prescripteur" placeholder="Prescripteur">
+                <input type="number" class="input_css" id="Age" placeholder="Age">
+                <input type="date" class="input_css" id="born" placeholder="Date de naissance">
                 <button class="btn">Entrer</button>
+            </div>
+            <div class="categorie">
+                <table>
+                    <tr>
+                        <th class="titre_collone">Nom</th>
+                        <th class="titre_collone">Prénom</th>
+                        <th class="titre_collone">Age</th>
+                        <th class="titre_collone">Date de naissance</th>
+                        <th class="titre_collone">Prescripteur</th>
+                    </tr>
+                    <tbody id="tableUser"></tbody>
+                </table>
+            </div>
+            <div class="container_list">
+                <table>
+                    <tr id="information_user">
+                        <th></th>
+                    </tr>
+                </table>
             </div>
         </div>
     </div>
-    <script src="../js/todolist.js"></script>
+
+<script src="../js/acceuil.js"></script>
 </body>
 </html>
