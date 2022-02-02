@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/todo.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+    <div class="container">
+        <div class="header">
+            <h1>To Do List</h1>
+        </div>
+            <div class="search_block">
+                <input type="text" id="search" placeholder="entrez votre texte">
+                <button id="btn" onclick="send()"><ion-icon name="add-outline"></ion-icon></button>
+            </div>
+                <div class="items">
+                    <ul id="contentItems" class="content_items">
+                        <li></li>
+                    </ul>
+                </div>
+    </div>
+
+    <script src="/assets/js/todo.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
