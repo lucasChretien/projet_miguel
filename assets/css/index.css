@@ -1,0 +1,109 @@
+body {
+  margin: auto;
+  padding: auto;
+  height: 600px;
+  width: 100%;
+  background: linear-gradient(to bottom right, blue, green);
+}
+
+.login {
+  display: flex;
+  margin: auto;
+  height: 100px;
+  width: 300px;
+  margin-top: 200px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  /* margin-left: 510px; */
+  color: white;
+}
+
+.contenu {
+  margin-top: -20px;
+}
+
+.cut {
+  display: flex;
+  margin: auto;
+  box-sizing: border-box;
+  border-radius: 10px;
+  height: 20px;
+  margin-top: -20px;
+  position: relative;
+  /* background: linear-gradient(-190deg, blue, green); */
+  top: 30px;
+  right: 85px;
+  transform: translateY(0);
+  transition: transform 200ms;
+  width: 110px;
+}
+
+input {
+  display: flex;
+  margin: auto;
+  padding: 15px;
+  width: 300px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: none;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  /* border-bottom: 1px solid white; */
+  background: none;
+  color: white;
+  outline: none;
+}
+
+.input:focus {
+  border: 2px solid white;
+}
+
+.placeholder {
+  display: flex;
+  margin: auto;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: sans-serif;
+  width: 300px;
+  margin-left: auto;
+  margin-top: -50px;
+  margin-bottom: 30px;
+  padding-left: 30px;
+  line-height: 14px;
+  pointer-events: none;
+  /* position: relative; */
+  transform-origin: 0 50%;
+  transition: transform 200ms, color 200ms;
+  top: 340px;
+}
+
+.input:focus ~ .placeholder,
+.input:not(:placeholder-shown) ~ .placeholder {
+  transform: translateY(-35px) translateX(10px) scale(0.75);
+}
+
+.input:focus ~ .placeholder {
+  color: white;
+}
+
+button {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  width: 150px;
+  padding: 10px;
+  /* margin-bottom: 50px; */
+  border: none;
+  border-radius: 5px;
+  justify-content: center;
+  background: linear-gradient(to bottom right, green, springgreen);
+  color: white;
+  font-weight: bold;
+}
+
+button:hover {
+  background: white;
+  color: springgreen;
+}
