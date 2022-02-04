@@ -6,9 +6,15 @@ const addInfo = document.querySelector("#addInfo")
 
 btnTwo.addEventListener("click", function(){
     const infoAccount = document.getElementById("ajoueInfo")   /* on récupère la valeur de account */
-        
+
     if (infoAccount != " "){
         const li = document.createElement("li") /* cet ligne permet de cree de li apres un  clik */
+        li.addEventListener("mouseover", function(){
+            li.style.color = "red"
+        })
+        li.addEventListener("mouseout", function() {
+            li.style.color = "black"
+        })
         li.innerHTML = infoAccount.value  /* cette ligne permet de dire que dans li on ecrira la valeur de input */
         addInfo.appendChild(li)
         infoAccount.value =""; /* cet ligne permet de rénitialiser l'input après avoir cliquer sur le bouton*/
