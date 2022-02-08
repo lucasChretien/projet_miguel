@@ -4,40 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="../css/setting.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet"> 
     <title>gestion compte</title>
     <script defer src="../js/setting.js"></script>
 </head>
 <body>
     <div class="pages_global">
-        <nav class="navbar">
-            <p>titre</p>
-    <!-- button navbar -->
-            <a href="../pages/acceuil.html">
-                <li><button>Acceuil</button></li>
-            </a>
-                <li><button>Gestion du compte</button></li>
-            <a href="../../index.html">
-                <li><button>Déconnexion</button></li>
-            </a>
-        </nav>
-    <!-- title todolist name -->
-        <div class="todo_list">
-            <p> Imformation compte utilisateurs </p>
-    <!-- getuser post up in board -->
-            <div class="container_listTwo">
-                <ul id="addInfo"></ul>
+            <nav class="navbar">
+        <!-- button navbar -->
+                <ol>
+                    <li class="items"><a href="../pages/acceuil.html">Accueil </a></li>
+                    <li class="items">Gestion du compte</li>
+                    <li class="items"><a href="../../index.html">Deconnexion</a></li>
+                </ol>
+            </nav>
+        <!-- title todolist name -->
+            <div class="todo_list">
+
+        <!-- getuser post up in board -->
+                <div class="container_listTwo">
+                    <ul id="addInfo"></ul>
+                </div>
             </div>
-        </div>
-    <!-- button  -->
-            <div class="valider">
-               <input type="text" id="ajoueInfo" placeholder="info">
-               <button id="btnTwo"> valider </button>
-               <button id="btnOne"> suprimer </button>
+        <!-- button  -->
+            <div class="container">
+                <h2>Information <br>compte utilisateurs</h2>
+                <div class="valider">
+                    <input type="text" id="ajoueInfo" class="search_block" placeholder="info">
+                    <button id="btnOne"> suprimer </button>
+                    <button id="btnTwo"> valider </button>
+                </div>
             </div>
-    
-        
-    </div>
     </div>
 </body>
 </html>

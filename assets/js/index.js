@@ -8,6 +8,6 @@ const connexion = () => {
     if (user == gooduser && goodpass == password){
         window.location = "./assets/pages/acceuil.html"  
     }else{
-        alert("erreur 404")
+        alert("Mot de passe ou E-mail incorrect")
     }
 }
